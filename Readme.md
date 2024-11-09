@@ -1,100 +1,105 @@
-# 🧮 Calculadora Básica con Streamlit
+# 🧮 Basic Calculator with Streamlit
 
-## 📜 Descripción
+## 📜 Description
 
-Este proyecto consiste en una **Calculadora Básica** creada utilizando **Streamlit**, una herramienta de Python para construir aplicaciones web interactivas de forma sencilla. La aplicación permite al usuario realizar operaciones aritméticas básicas como **suma**, **resta**, **multiplicación** y **división**.
+This project consists of a **Basic Calculator** created using **Streamlit**, a Python tool for building interactive web applications easily. The application allows users to perform basic arithmetic operations like **addition**, **subtraction**, **multiplication**, and **division**.
 
-## 🔧 Funcionalidades
+## 🔧 Features
 
-- ➕ **Suma**: Suma dos números.
-- ➖ **Resta**: Resta el segundo número al primero.
-- ✖️ **Multiplicación**: Multiplica dos números.
-- ➗ **División**: Divide el primer número por el segundo (con manejo de error en caso de división por 0).
+- ➕ **Addition**: Adds two numbers.
+- ➖ **Subtraction**: Subtracts the second number from the first.
+- ✖️ **Multiplication**: Multiplies two numbers.
+- ➗ **Division**: Divides the first number by the second (with error handling in case of division by 0).
 
-## 💻 Tecnologías utilizadas
+## 💻 Technologies Used
 
 - **Python 3.12**
-- **Streamlit**: Framework utilizado para la interfaz web.
+- **Streamlit**: Framework used for the web interface.
 
-## 🛠️ Requisitos
+## 🛠️ Requirements
 
-Para ejecutar este proyecto, necesitarás tener instalado Python 3 y las dependencias necesarias. Si no tienes un entorno virtual, te recomiendo crear uno.
+To run this project, you will need Python 3 and the necessary dependencies installed. If you don't have a virtual environment, it's recommended to create one.
 
-### 📥 Instalación
+### 📥 Installation
 
-1. Clona este repositorio:
+1. Clone this repository:
    ```bash
-   git clone https://github.com/tu_usuario/calculadora-streamlit.git
+   git clone https://github.com/kmamaguana/SegundaPagina
    ```
 
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
    ```bash
    cd calculadora-streamlit
    ```
 
-3. (Opcional) Crea un entorno virtual para instalar las dependencias:
+3. (Optional) Create a virtual environment to install dependencies:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # En Windows usa venv\Scripts\activate
+   source venv/bin/activate  # On Windows use venv\Scripts\activate
    ```
 
-4. Instala las dependencias necesarias:
+4. Install the necessary dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-## 🚀 Ejecución
+## 🚀 Running the Application
 
-Para ejecutar la aplicación de la calculadora, usa el siguiente comando:
+To run the calculator application, use the following command:
 
 ```bash
 streamlit run app.py
 ```
 
-Esto abrirá la aplicación en tu navegador por defecto en `http://localhost:8501`. 🌐
+This will open the application in your default browser at `http://localhost:8501`. 🌐
 
-## 🐳 Dockerización
+## 🐳 Dockerization
 
-Este proyecto está dockerizado para facilitar su despliegue en cualquier entorno. Sigue los pasos a continuación para construir y ejecutar el contenedor Docker:
+This project is dockerized for easier deployment in any environment. Follow the steps below to build and run the Docker container:
 
-### 🏗️ Construcción de la imagen Docker
+### 🏗️ Building the Docker Image
 
-1. Construye la imagen de Docker:
+1. Build the Docker image:
    ```bash
    docker build -t calculadora-streamlit .
    ```
 
-2. Ejecuta el contenedor Docker:
+2. Run the Docker container:
    ```bash
    docker run -p 8501:8501 calculadora-streamlit
    ```
 
-Esto permitirá ejecutar la aplicación dentro de un contenedor, accesible en `http://localhost:8501`. 🖥️
+This will run the application inside a container, accessible at `http://localhost:8501`. 🖥️
 
-## 📤 Subir a Docker Hub (Opcional)
+## 📤 Pushing to Docker Hub (Optional)
 
-Si deseas compartir el contenedor Docker, puedes subirlo a **Docker Hub**:
+If you want to share the Docker container, you can push it to **Docker Hub**:
 
-1. Inicia sesión en Docker Hub:
+1. Log in to Docker Hub:
    ```bash
    docker login
    ```
 
-2. Taggea la imagen:
+2. Tag the image:
    ```bash
-   docker tag calculadora-streamlit tu_usuario/calculadora-streamlit
+   docker tag calculadora-streamlit your_username/calculadora-streamlit
    ```
 
-3. Sube la imagen:
+3. Push the image:
    ```bash
-   docker push tu_usuario/calculadora-streamlit
+   docker push your_username/calculadora-streamlit
    ```
 
-## 🤝 Contribuciones
+## 🤝 Contributing
 
-Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar un pull request con tus mejoras. 🙌
+If you'd like to contribute to this project, feel free to fork it and submit a pull request with your improvements. 🙌
 
-## 📝 Licencia
+## 📝 License
 
-Este proyecto está licenciado bajo la **MIT License** - consulta el archivo [LICENSE](LICENSE) para más detalles. 📜
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for more details. 📜
 
+## 🙏 Thanks
+
+A big thank you to everyone who has supported and contributed to this project! Your help and feedback are always appreciated. 🙏
+
+![Minion](https://octodex.github.com/images/minion.png)
