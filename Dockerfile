@@ -1,4 +1,8 @@
-FROM ubuntu:latest
-LABEL authors="Karen Amaguaña"
 
-ENTRYPOINT ["top", "-b"]
+FROM python:3.10-slim
+LABEL authors="Karen Amaguaña"
+WORKDIR /app
+COPY . /app
+RUN pip install --no-cache-dir -r requirements.txt
+EXPOSE 8501
+CMD ["streamlit", "run", "app.py"]
